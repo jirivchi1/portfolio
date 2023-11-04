@@ -1,0 +1,92 @@
+{
+    "events": [
+      {
+        "start_date": {
+          "year": "2022",
+          "month": "9"
+        },
+        "text": {
+          "headline": "Master in Artificial Intelligence",
+          "text": "Studied at Loyola University from September 2022 until May 2023."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2023"
+        },
+        "text": {
+          "headline": "Work: Data Analysis, NLP and Vision",
+          "text": "Began working with Oga.ai in July 2023 on current projects involving data analysis, NLP, and computer vision."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2023"
+        },
+        "text": {
+          "headline": "Loyola Ideas Contest - 2023",
+          "text": "Winner of the competition with an AI robot project in agriculture."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2022"
+        },
+        "text": {
+          "headline": "Third Edition Ideas Factory",
+          "text": "Winner of the contest with the project Connect and Plant."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2019"
+        },
+        "text": {
+          "headline": "Internship at Deprom Company",
+          "text": "Process automation internship using Python and Excel carried out in 2019."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2019"
+        },
+        "text": {
+          "headline": "Norfolk Youth Projects",
+          "text": "Manager of Erasmus students in 2019."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2018"
+        },
+        "text": {
+          "headline": "Action Against Hunger",
+          "text": "Training in Sustainable Development Goals (SDG) in 2018."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2021"
+        },
+        "text": {
+          "headline": "Master's in Economic Modelling",
+          "text": "Completed at Sorbonne University Paris from September 2021 until 2022."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2015",
+          "month": "9"
+        },
+        "end_date": {
+          "year": "2020",
+          "month": "7"
+        },
+        "text": {
+          "headline": "Degree in Economic Analysis",
+          "text": "Studied at Pablo de Olavide University from September 2015 until July 2020."
+        }
+      }
+    ]
+  }
+  

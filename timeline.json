@@ -1,0 +1,96 @@
+{
+    "events": [
+      {
+        "start_date": {
+          "year": "2022",
+          "month": "9"
+        },
+        "text": {
+          "headline": "Máster en Inteligencia Artificial",
+          "text": "Estudios realizados en Universidad Loyola desde septiembre de 2022 hasta mayo de 2023."
+        }        
+      },
+      {
+        "start_date": {
+          "year": "2023"
+        },
+        "text": {
+          "headline": "Trabajo: Análisis de datos, NLP y Visión",
+          "text": "Comenzó a trabajar con Oga.ai en julio de 2023 con proyectos actuales que involucran análisis de datos, NLP y visión por computadora."
+        },
+        "media": {
+          "url": "https://github.com/jirivchi1/cv_ismael/blob/main/cv.jpeg?raw=true",
+          "credit": "Oga.ai"
+        }
+      },
+      {
+        "start_date": {
+          "year": "2023"
+        },
+        "text": {
+          "headline": "Concurso Ideas Loyola - 2023",
+          "text": "Ganador del concurso con el proyecto robot con IA en agricultura."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2022"
+        },
+        "text": {
+          "headline": "Tercera Edición Ideas Factory",
+          "text": "Ganador del concurso con el proyecto Conecta y Planta."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2019"
+        },
+        "text": {
+          "headline": "Prácticas en empresa Deprom",
+          "text": "Práctica de automatización de procesos con Python y Excel realizada en 2019."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2019"
+        },
+        "text": {
+          "headline": "Norfolk Youth Projects",
+          "text": "Manager de estudiantes Erasmus en 2019."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2018"
+        },
+        "text": {
+          "headline": "Acción contra el hambre",
+          "text": "Formación en ODS (Objetivo Desarrollo Sostenible) en 2018."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2021"
+        },
+        "text": {
+          "headline": "Máster en Modelos Económicos",
+          "text": "Realizado en Universidad Sorbona París desde septiembre de 2021 hasta 2022."
+        }
+      },
+      {
+        "start_date": {
+          "year": "2015",
+          "month": "9"
+        },
+        "end_date": {
+          "year": "2020",
+          "month": "7"
+        },
+        "text": {
+          "headline": "Grado en Análisis Económico",
+          "text": "Estudió en Universidad Pablo de Olavide desde septiembre de 2015 hasta julio de 2020."
+        }
+      }
+    ]
+  }
+  

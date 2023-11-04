@@ -1,51 +1,91 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# create basic streamlit app
 
 import streamlit as st
-from streamlit.logger import get_logger
+import pandas as pd
+import numpy as np
 
-LOGGER = get_logger(__name__)
+from streamlit_timeline import timeline
+
+from graph_builder_en import *
+from graph_builder_es import *
 
 
-def run():
-    st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
-    )
 
-    st.write("# Welcome to Streamlit! 👋")
+def main():
 
-    st.sidebar.success("Select a demo above.")
+    language = st.sidebar.radio('Choose your language', ['English', 'Español'])
+    st.sidebar.image('imgs/ismael_photo_oga.jpg')
 
-    st.markdown(
-        """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
-    )
+
+
+    english_content = {
+    "title": "Ismael Rivera",
+    "description": "Ismael Rivera, an AI and data analysis expert, holds master's degrees from Loyola University (2022-2023) and the Sorbonne University Paris (2021-2022), excelling in business automation projects, LLM models, and artificial vision. His technical prowess covers Python and time series analysis, with experience in entrepreneurship leadership. He is proficient in Spanish, English (Cambridge First), and has an intermediate level of Italian."}
+
+    spanish_content = {
+    "title": "Ismael Rivera",
+    "description": "Ismael Rivera, experto en IA y análisis de datos, tiene másteres de la Universidad Loyola (2022-2023) y la Sorbona de París (2021-2022), destacándose en proyectos de automatización  para negocios, modelos LLM y visión artificial. Su destreza técnica abarca Python y análisis de series temporales, con experiencia en liderazgo en emprendimiento. Maneja el castellano, inglés (Cambridge First) e italiano a nivel intermedio."}   
+
+    st.title(english_content["title"])
+
+
+
+    col1, col2, col3 = st.columns([1,2,1])
+
+
+
+
+
+    if language == 'English':
+
+        tab1,tab2,tab3 = st.tabs(["summary","Career snapshot", "Daily workflow"])
+
+        with tab1:        
+            st.write(english_content["description"])
+
+
+        with tab2:
+            with st.spinner(text="Building line"):
+                with open('timeline_en.json', "r", encoding='utf-8') as f:
+                    data = f.read()
+                    timeline(data, height=400)
+
+
+        with tab3:
+            st.graphviz_chart(graph)
+
+        st.sidebar.caption('Wish to connect?')
+        st.sidebar.write('📧: jirivchi@gmail.com')
+        st.sidebar.write('📧 : ismael.rivera@oga.ai')
+        pdfFileObj = open('pdfs/CV_Ismael_280923.pdf', 'rb')
+        st.sidebar.download_button('download resume',pdfFileObj,file_name='CV_Ismael_280923.pdf',mime='pdf')
+
+        
+    if language == 'Español':
+
+        tab1,tab2,tab3 = st.tabs(["Resumen","Vision General", "Flujo de trabajo diario"])
+
+        with tab1:
+            st.write(spanish_content["description"])
+
+        with tab2:
+
+            with st.spinner(text="Building line"):
+                with open('timeline.json', "r", encoding='utf-8') as f:
+                    data = f.read()
+                    timeline(data, height=500)
+        
+        with tab3:
+            st.graphviz_chart(graph_es)
+
+        # sidebar
+        st.sidebar.caption('¿Deseas Contactar?')
+        st.sidebar.write('📧: jirivchi@gmail.com')
+        st.sidebar.write('📧 : ismael.rivera@oga.ai')
+        pdfFileObj = open('pdfs/CV_Ismael_280923.pdf', 'rb')
+        st.sidebar.download_button('Descargar CV',pdfFileObj,file_name='CV_Ismael_280923.pdf',mime='pdf')
+
 
 
 if __name__ == "__main__":
-    run()
+    main()

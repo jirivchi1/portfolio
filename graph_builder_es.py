@@ -1,0 +1,20 @@
+import graphviz as graphviz
+
+
+graph_es = graphviz.Digraph()
+graph_es.edge('10AM, inicio','revisar correos')
+graph_es.edge('revisar correos','revisar métricas de las tuberías')
+graph_es.edge('revisar métricas de las tuberías','resolver problemas',label='Si se encuentra un bug')
+graph_es.edge('resolver problemas','11AM, asistir a la reunión scrum')
+graph_es.edge('revisar métricas de las tuberías','11AM, asistir a la reunión scrum')
+graph_es.edge('11AM, asistir a la reunión scrum','trabajar en el Ticket de Jira asignado')
+graph_es.edge('trabajar en el Ticket de Jira asignado','EDA',label='usualmente')
+graph_es.edge('trabajar en el Ticket de Jira asignado','Consultas SQL',label='Casi todos los días')
+graph_es.edge('trabajar en el Ticket de Jira asignado','Modelado ML',label='raramente')
+graph_es.edge('EDA','Consultas SQL')
+graph_es.edge('Consultas SQL','EDA')
+graph_es.edge('trabajar en el Ticket de Jira asignado','alguna reunión')
+graph_es.edge('trabajar en el Ticket de Jira asignado','Alrededor de las 6PM')
+graph_es.edge('Alrededor de las 6PM','fin')
+graph_es.edge('alguna reunión','fin',label='Si es muy larga')
+graph_es.edge('alguna reunión','trabajar en el Ticket de Jira asignado')
