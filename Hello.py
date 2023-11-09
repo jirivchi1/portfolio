@@ -13,7 +13,7 @@ from graph_builder_es import *
 
 def main():
 
-    language = st.sidebar.radio('Choose your language', ['English', 'Español'])
+    language = st.sidebar.radio('Choose your language', ['Español', 'English'])
     st.sidebar.image('imgs/ismael_photo_oga.jpg')
 
 
@@ -28,7 +28,11 @@ def main():
 
     st.title(english_content["title"])
 
+    if language == 'English':
+        st.subheader('"Faciliting the adoption of ai techonology into the world, into businesses, etc."')
 
+    if language == 'Español':
+        st.subheader('"Facilitando la adopción de la tecnología de inteligencia artificial en el mundo, en los negocios, etc."')
 
     col1, col2, col3 = st.columns([1,2,1])
 
@@ -40,7 +44,8 @@ def main():
 
         tab1,tab2,tab3 = st.tabs(["summary","Career snapshot", "Daily workflow"])
 
-        with tab1:        
+        with tab1:
+
             st.write(english_content["description"])
 
 
