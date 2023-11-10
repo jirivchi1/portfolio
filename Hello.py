@@ -8,6 +8,8 @@ from streamlit_timeline import timeline
 
 from graph_builder_en import *
 from graph_builder_es import *
+from graph_vision_en import *
+from graph_vision_es import *
 
 
 
@@ -42,7 +44,7 @@ def main():
 
     if language == 'English':
 
-        tab1,tab2,tab3 = st.tabs(["summary","Career snapshot", "Daily workflow"])
+        tab1,tab2,tab3,tab4 = st.tabs(["summary","Career snapshot", "Daily workflow","Projects"])
 
         with tab1:
 
@@ -65,10 +67,15 @@ def main():
         pdfFileObj = open('pdfs/CV_Ismael_280923.pdf', 'rb')
         st.sidebar.download_button('download resume',pdfFileObj,file_name='CV_Ismael_280923.pdf',mime='pdf')
 
+        with tab4:
+            st.header('VISION')
+            st.subheader('EPIs-YOLO')
+            st.graphviz_chart(graph_en)
+
         
     if language == 'Español':
 
-        tab1,tab2,tab3 = st.tabs(["Resumen","Vision General", "Flujo de trabajo diario"])
+        tab1,tab2,tab3,tab4 = st.tabs(["Resumen","Vision General", "Flujo de trabajo diario","Trabajos"])
 
         with tab1:
             st.write(spanish_content["description"])
@@ -82,6 +89,11 @@ def main():
         
         with tab3:
             st.graphviz_chart(graph_es)
+
+        with tab4:
+            st.header('VISION')
+            st.subheader('EPIs-YOLO')
+            st.graphviz_chart(graph_vision_es)
 
         # sidebar
         st.sidebar.caption('¿Deseas Contactar?')
