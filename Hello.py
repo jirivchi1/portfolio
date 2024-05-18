@@ -99,7 +99,7 @@ def main():
         st.sidebar.caption('¿Deseas Contactar?')
         st.sidebar.write('📧: jirivchi@gmail.com')
         st.sidebar.write('📧 : ismael.rivera@oga.ai')
-        pdfFileObj = open('pdfs/CV_Ismael_280923.pdf', 'rb')
+        pdfFileObj = open('pdfs/CV_ISMAEL_RIVERA_090424.pdf', 'rb')
         st.sidebar.download_button('Descargar CV',pdfFileObj,file_name='CV_Ismael_280923.pdf',mime='pdf')
 
 
