@@ -18,8 +18,6 @@ def main():
     language = st.sidebar.radio('Choose your language', ['Español', 'English'])
     st.sidebar.image('imgs/Ismael-Rivera-OGA-2024.jpg')
 
-
-
     english_content = {
     "title": "AI Ismael Rivera",
     "description": "Hello, I'm Ismael Rivera, an AI and data analysis expert, excelling in business automation projects, LLM models, and artificial vision."}
@@ -34,12 +32,9 @@ def main():
         st.subheader('"Hello, I am Ismael Rivera, an AI and data analysis expert, excelling in business automation projects, LLM models, and artificial vision."')
 
     if language == 'Español':
-        st.subheader('"Hola, soy Ismael Rivera, experto en IA y análisis de datos, proyectos de automatización  para negocios, modelos LLM y visión artificial."')
+        st.subheader('"Hola, soy Ismael Rivera, experto en IA , análisis de datos, proyectos de automatización  para negocios, modelos LLMs y visión artificial."')
 
     col1, col2, col3 = st.columns([1,2,1])
-
-
-
 
 
     if language == 'English':
@@ -48,18 +43,17 @@ def main():
 
         with tab1:
 
-            st.header(':one: Explaratory data analysis and visualization')
-            st.subheader('use cases')
+            st.subheader(':one: Explaratory data analysis and visualization')
+            st.write('use cases')
 
-            st.header(':two: VISION')
-            st.subheader('Sports')
+            st.subheader(':two: VISION')
+            st.write('Sports')
 
-            st.header(':three: LLMs')
-            st.subheader('Chatgpt4o')
+            st.subheader(':three: LLMs')
+            st.write('Chatgpt4o')
 
-            st.header(':four: Recommender Systems')
-            st.subheader('Tripadvisor')
-            
+            st.subheader(':four: Recommender Systems')
+            st.write('Tripadvisor')           
 
 
         with tab2:
