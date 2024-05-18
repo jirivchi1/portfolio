@@ -81,19 +81,19 @@ def main():
 
         with tab1:
 
-            st.header(':one: Análisis de datos y visualización')
-            st.subheader('Casos de uso')
+            st.subheader(':one: Análisis de datos y visualización')
+            st.write('Casos de uso')
 
-            st.header(':two: Visión Artificial')
-            st.subheader('Deporte')
+            st.subheader(':two: Visión Artificial')
+            st.write('Deporte')
 
-            st.header(':three: Modelos LLM')
-            st.subheader('Chatgpt4o')
-            st.subheader('Llama3')
+            st.subheader(':three: Modelos LLM')
+            st.write('Chatgpt4o')
+            st.write('Llama3')
 
 
-            st.header(':four: Sistemas de Recomendación')
-            st.subheader('Tripadvisor')
+            st.subheader(':four: Sistemas de Recomendación')
+            st.write('Tripadvisor')
             
 
         with tab2:
