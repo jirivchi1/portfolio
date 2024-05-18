@@ -46,11 +46,13 @@ def main():
             st.subheader(':one: Explaratory data analysis and visualization')
             st.write('use cases')
 
-            st.subheader(':two: VISION')
+            st.subheader(':two: Computer Vision')
             st.write('Sports')
 
             st.subheader(':three: LLMs')
             st.write('Chatgpt4o')
+            st.write('llama3')
+
 
             st.subheader(':four: Recommender Systems')
             st.write('Tripadvisor')           
@@ -79,16 +81,18 @@ def main():
 
         with tab1:
 
-            st.header(':one: Explaratory data analysis and visualization')
-            st.subheader('use cases')
+            st.header(':one: Análisis de datos y visualización')
+            st.subheader('Casos de uso')
 
-            st.header(':two: VISION')
-            st.subheader('Sports')
+            st.header(':two: Visión Artificial')
+            st.subheader('Deporte')
 
-            st.header(':three: LLMs')
+            st.header(':three: Modelos LLM')
             st.subheader('Chatgpt4o')
+            st.subheader('Llama3')
 
-            st.header(':four: Recommender Systems')
+
+            st.header(':four: Sistemas de Recomendación')
             st.subheader('Tripadvisor')
             
 
