@@ -16,7 +16,7 @@ from graph_vision_es import *
 def main():
 
     language = st.sidebar.radio('Choose your language', ['Español', 'English'])
-    st.sidebar.image('imgs/ismael_photo_oga.jpg')
+    st.sidebar.image('imgs/Ismael-Rivera-OGA-2024.jpg')
 
 
 
@@ -64,7 +64,7 @@ def main():
         st.sidebar.caption('Wish to connect?')
         st.sidebar.write('📧: jirivchi@gmail.com')
         st.sidebar.write('📧 : ismael.rivera@oga.ai')
-        pdfFileObj = open('pdfs/CV_Ismael_280923.pdf', 'rb')
+        pdfFileObj = open('pdfs/CV_ISMAEL_RIVERA_090424.pdf', 'rb')
         st.sidebar.download_button('download resume',pdfFileObj,file_name='CV_Ismael_280923.pdf',mime='pdf')
 
         with tab4:
